@@ -1,22 +1,22 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+html,
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @font-face {
     font-family: "Modern Negra";
     src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
 }
-
 
 @theme {
     --color-yellow: #e7d393;
@@ -27,16 +27,34 @@ html, body {
 }
 
 @utility flex-between {
-  @apply flex justify-between items-center;
+    @apply flex justify-between items-center;
 }
 
 @utility nav {
-  @apply flex-between px-4;
+    @apply flex-between px-4;
 }
 
 @utility navLeft {
-  @apply gap-2;
+    @apply gap-2;
 }
 
+@utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff, #898989);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
+@layer components {
+    main {
+        @apply w-full overflow-x-hidden;
+    }
 
+    .noisy {
+        @apply absolute inset-0 size-full bg-[url('/images/noise.png')];
+    }
+
+    .main_heading {
+        @apply text-5xl font-medium text-gradient font-modern-negra text-center text-[37vh] tracking-wider uppercase pt-[9rem];
+    }
+}
