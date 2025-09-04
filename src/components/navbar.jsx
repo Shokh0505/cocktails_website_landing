@@ -27,13 +27,13 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <nav className="nav py-4 fixed z-50 w-full">
-            <a className="navLeft flex-between font-modern-negra">
+        <nav className="nav py-4 fixed z-50 w-full md:flex-row flex flex-col">
+            <a className="navLeft flex-between font-modern-negra md:py-0 py-2">
                 <img src="/images/logo.png" alt="logo" />
                 <div className="text-3xl">Velvet Pour</div>
             </a>
             <div>
-                <ul className="flex-between gap-8 text-lg">
+                <ul className="flex-between gap-8 md:text-lg text-sm">
                     {navLinks.map((link) => (
                         <li key={link.id} className="cursor-pointer">
                             <a href={`#${link.id}`}>{link.title}</a>

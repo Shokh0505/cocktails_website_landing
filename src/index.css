@@ -55,6 +55,6 @@ body {
     }
 
     .main_heading {
-        @apply text-5xl font-medium text-gradient font-modern-negra text-center text-[37vh] tracking-wider uppercase pt-[9rem];
+        @apply font-medium text-gradient font-modern-negra text-center tracking-wider uppercase pt-[9rem];
     }
 }
