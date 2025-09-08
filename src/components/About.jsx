@@ -36,7 +36,7 @@ export const About = () => {
 
     return (
         <section className="relative px-8" id="about">
-            <div className="py-24 flex items-start justify-between">
+            <div className="py-24 flex md:flex-row flex-col items-start justify-between">
                 <div className="flex-1/2">
                     <button className="bg-white text-black rounded-full py-2 px-4 font-medium text-md block">
                         Best Cocktails
@@ -66,7 +66,7 @@ export const About = () => {
             </div>
 
             <div className="space-y-6">
-                <div className="grid top-grid grid-cols-12 gap-4">
+                <div className="flex flex-col md:grid top-grid grid-cols-12 gap-4">
                     <div className="col-span-3 relative">
                         <img
                             src="/images/abt1.png"
@@ -89,7 +89,7 @@ export const About = () => {
                         <div className="noisy"></div>
                     </div>
                 </div>
-                <div className="grid bottom-grid grid-cols-12 gap-4">
+                <div className="flex flex-col md:grid bottom-grid grid-cols-12 gap-4">
                     <div className="col-span-8 relative">
                         <div className="noisy" />
                         <img
